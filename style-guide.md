@@ -17,7 +17,7 @@ The designs were created to the following widths:
 - Dark blue (photography text): hsl(198, 62%, 26%)
 - Dark moderate cyan (footer): hsl(168, 34%, 41%)
 
-### Neutral
+### Primary
 
 - Very dark desaturated blue: hsl(212, 27%, 19%)
 - Very dark grayish blue: hsl(213, 9%, 39%)
@@ -29,7 +29,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size: 18px
+<!-- - Font size: 18px -->
 
 ### Font
 
