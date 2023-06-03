@@ -16,10 +16,15 @@ body {
 header {
     background-image: url('/images/desktop/image-header.jpg');
     background-repeat: no-repeat;
-    background-size: 1440px 695px;
+    background-size: 100% 696px;
     height: 696px;
     width: 100%;
     color: #fff;
+}
+@media screen and (max-width: 610px) {
+    header nav ul li {
+        display: none;
+    }
 }
 /* navBar*/
 header nav {
@@ -34,7 +39,7 @@ header nav {
 header nav .logo {
     font-size: larger;
     font-weight: 900;
-    cursor:default;
+    cursor: default;
 }
 
 header nav ul {
@@ -68,19 +73,116 @@ header a {
 }
 /* arrow */
 .arrow {
-    min-width: none;
-    text-align: center;
+    flex-direction: column;
+    min-height: 65vh;
     display: flex;
     align-items: center;
-    flex-direction:column;
-    margin-top: 8rem;
-    margin-left: 100px;
+    justify-content: center;
 }
 
 .WEARE {
     font-family: 'Fraunces', serif;
-    font-size:xx-large;
+    font-size: xx-large;
     letter-spacing: 7px;
     margin-bottom: 4.5rem;
 }
 /* main Services */
+
+main .services{
+    display:flex;
+    flex-wrap: wrap;
+}
+main .services div, main .services img{
+    width: 674.5px;
+    height: 590px;
+}
+
+.services .left-col, .right-col {
+    padding: 110px;
+    padding-top: 10%;
+    line-height: 30px;
+}
+.services .left-col h2,.services .right-col h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    line-height: 50px;
+    color: hsl(212, 27%, 19%);
+    padding-right: 30px;
+}
+.services .left-col p,.services .right-col p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+    margin: 35px 0;
+    /* padding-right:80px; */
+
+}
+
+
+.left-col a,.right-col a {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+}
+
+.left-col a::before,.right-col a::before {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    width: 100%;
+    height: 0.7rem;
+    background: hsla(51, 100%, 49%, 0.404);
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: .35s;
+}
+.right-col a::before{
+    background: hsla(7, 99%, 70%, 0.404);
+}
+.right-col a:hover::before{
+    background: hsl(7, 99%, 70%);
+}
+.left-col a:hover::before{
+    background: hsl(51, 100%, 49%);
+}
+.grafis{
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+    background-position:center;
+    position: relative;
+}
+.grafis .left-col-text,.orange .left-col-text{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 45%;
+}
+
+.grafis .left-col-text h2, .orange .left-col-text h2{
+    font-size: 2rem;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Fraunces', serif;
+    padding-bottom: 50px;
+}
+.orange .left-col-text h2{
+    color: #19536b;
+}
+.grafis .left-col-text p,.orange .left-col-text p{
+    font-size: .8rem;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+}
+.orange .left-col-text p{
+    color: #19536b;
+}
+.orange{
+    background-image: url("/images/desktop/image-photography.jpg");
+    background-position: center;
+    position: relative;
+} 
