@@ -21,11 +21,13 @@ header {
     width: 100%;
     color: #fff;
 }
+
 @media screen and (max-width: 610px) {
     header nav ul li {
         display: none;
     }
 }
+
 /* navBar*/
 header nav {
     display: flex;
@@ -59,18 +61,20 @@ header nav ul li .conta {
     text-transform: uppercase;
     font-weight: 700;
     transition: .3s;
-    font-family: 'Fraunces', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: .8rem;
 }
 
-header nav ul li:nth-child(4) {
-    margin-right: 0;
+header nav ul li .conta:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 header a {
     color: #fff;
     text-decoration: none;
 }
+
 /* arrow */
 .arrow {
     flex-direction: column;
@@ -86,30 +90,39 @@ header a {
     letter-spacing: 7px;
     margin-bottom: 4.5rem;
 }
+
 /* main Services */
 
-main .services{
-    display:flex;
+
+main .services {
+    display: flex;
     flex-wrap: wrap;
 }
-main .services div, main .services img{
+
+main .services div,
+main .services img {
     width: 674.5px;
     height: 590px;
 }
 
-.services .left-col, .right-col {
+.services .left-col,
+.right-col {
     padding: 110px;
     padding-top: 10%;
     line-height: 30px;
 }
-.services .left-col h2,.services .right-col h2 {
+
+.services .left-col h2,
+.services .right-col h2 {
     font-family: 'Fraunces', serif;
     font-size: 40px;
     line-height: 50px;
     color: hsl(212, 27%, 19%);
     padding-right: 30px;
 }
-.services .left-col p,.services .right-col p{
+
+.services .left-col p,
+.services .right-col p {
     font-family: 'Barlow', sans-serif;
     color: hsl(232, 10%, 55%);
     margin: 35px 0;
@@ -118,7 +131,8 @@ main .services div, main .services img{
 }
 
 
-.left-col a,.right-col a {
+.left-col a,
+.right-col a {
     text-decoration: none;
     color: hsl(212, 27%, 19%);
     text-transform: uppercase;
@@ -129,7 +143,8 @@ main .services div, main .services img{
     font-family: 'Fraunces', serif;
 }
 
-.left-col a::before,.right-col a::before {
+.left-col a::before,
+.right-col a::before {
     content: "";
     position: absolute;
     bottom: 0.3rem;
@@ -141,21 +156,27 @@ main .services div, main .services img{
     border-radius: 0.5rem;
     transition: .35s;
 }
-.right-col a::before{
+
+.right-col a::before {
     background: hsla(7, 99%, 70%, 0.404);
 }
-.right-col a:hover::before{
+
+.right-col a:hover::before {
     background: hsl(7, 99%, 70%);
 }
-.left-col a:hover::before{
+
+.left-col a:hover::before {
     background: hsl(51, 100%, 49%);
 }
-.grafis{
+
+.grafis {
     background-image: url("/images/desktop/image-graphic-design.jpg");
-    background-position:center;
+    background-position: center;
     position: relative;
 }
-.grafis .left-col-text,.orange .left-col-text{
+
+.grafis .left-col-text,
+.orange .left-col-text {
     position: absolute;
     left: 50%;
     top: 65%;
@@ -164,25 +185,84 @@ main .services div, main .services img{
     max-width: 45%;
 }
 
-.grafis .left-col-text h2, .orange .left-col-text h2{
+.grafis .left-col-text h2,
+.orange .left-col-text h2 {
     font-size: 2rem;
     color: hsl(167, 40%, 24%);
     font-family: 'Fraunces', serif;
     padding-bottom: 50px;
 }
-.orange .left-col-text h2{
+
+.orange .left-col-text h2 {
     color: #19536b;
 }
-.grafis .left-col-text p,.orange .left-col-text p{
+
+.grafis .left-col-text p,
+.orange .left-col-text p {
     font-size: .8rem;
     color: hsl(167, 40%, 24%);
     font-family: 'Barlow', sans-serif;
 }
-.orange .left-col-text p{
+
+.orange .left-col-text p {
     color: #19536b;
 }
-.orange{
+
+.orange {
     background-image: url("/images/desktop/image-photography.jpg");
     background-position: center;
     position: relative;
-} 
+}
+
+/* Testimonials starts here */
+.testimonials {
+    padding: 6rem;
+    text-align: center;
+    background: hsla(42, 92%, 90%, 0.192);
+}
+
+.testimonials h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 3rem;
+    letter-spacing: .3rem;
+    font-family: 'Fraunces', serif;
+}
+
+.testimonials .testimonial-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonials .testimonial-row .testimonial-col {
+    flex-basis: 31%;
+}
+
+.testimonials .testimonial-row .testimonial-col img {
+    border-radius: 50%;
+    width: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.testimonials .testimonial-row .testimonial-col p {
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    font-family: 'Barlow', sans-serif;
+}
+
+.testimonials .testimonial-row .testimonial-col .client-name h4 {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    font-family: 'Fraunces', serif;
+}
+
+.testimonials .testimonial-row .testimonial-col .client-name p {
+    font-size: .8rem;
+    margin-bottom: 0;
+    font-family: 'Barlow', sans-serif;
+}
